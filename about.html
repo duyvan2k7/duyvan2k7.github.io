@@ -1,17 +1,68 @@
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Giới thiệu - Khuất Duy Văn</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f2f5;
+      color: #333;
+    }
+    header {
+      background: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in;
+    }
+    .profile {
+      text-align: center;
+    }
+    .profile img {
+      width: 150px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-  <h1>Giới thiệu</h1>
-  <p>Tôi là Khuất Duy Văn, học sinh lớp 12A1. Đây là trang web cá nhân của tôi.</p>
+  <header>
+    <h1>Giới thiệu</h1>
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="about.html">Giới thiệu</a>
+      <a href="contact.html">Liên hệ</a>
+    </nav>
+  </header>
 
-  <nav>
-    <a href="index.html">Trang chủ</a> |
-    <a href="about.html">Giới thiệu</a> |
-    <a href="contact.html">Liên hệ</a>
-  </nav>
+  <div class="container">
+    <div class="profile">
+      <img src="van-avatar.jpg" alt="Ảnh đại diện Khuất Duy Văn" />
+      <h2>Khuất Duy Văn</h2>
+      <p>Học sinh lớp 12A1. Mình đam mê công nghệ, yêu thích lập trình và đang xây dựng trang web cá nhân đầu tiên.</p>
+    </div>
+  </div>
 </body>
 </html>
